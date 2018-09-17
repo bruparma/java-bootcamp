@@ -1,0 +1,68 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class SingletonDB {
+	private static SingletonDB sdb=null;
+    private Connection con = null;
+	private Statement statement = null;
+	private ResultSet resultSet = null;
+    private static final String URL="jdbc:mysql://localhost:3306/database";
+    private static final String USR="user";
+    private static final String PWD="password";
+
+	
+	//The constructor is private in order to avoid outside instantiation.
+	private SingletonDB() {} 
+	
+	public static SingletonDB getInstance() {
+		if(sdb==null) {
+			sdb = new SingletonDB();
+		}
+		return sdb;
+	}
+	
+	public void connect() throws Exception {
+		try {
+            // This will load the MySQL driver.
+            Class.forName("com.mysql.jdbc.Driver");
+            // Setup the connection with the DB
+            con = DriverManager.getConnection(URL,USR,PWD);
+		}catch(Exception e) {
+			throw e;
+		}		
+	}
+	public boolean isConnected() {
+		return con!=null;		
+	}
+	
+	public void printQuery() {
+
+		statement = con.createStatement();
+		resultSet = statement.executeQuery("select * from table1");
+		writeResultSet(resultSet);
+	}
+	
+    private void writeResultSet(ResultSet resultSet) throws SQLException {
+        // ResultSet is initially before the first data set
+        while (resultSet.next()) {
+            // It is possible to get the columns via name
+            // also possible to get the columns via the column number
+            // which starts at 1
+            // e.g. resultSet.getSTring(2);
+            String user = resultSet.getString("myuser");
+            String website = resultSet.getString("webpage");
+            String summary = resultSet.getString("summary");
+            Date date = resultSet.getDate("datum");
+            String comment = resultSet.getString("comments");
+            System.out.println("User: " + user);
+            System.out.println("Website: " + website);
+            System.out.println("summary: " + summary);
+            System.out.println("Date: " + date);
+            System.out.println("Comment: " + comment);
+        }
+    }
+	
+}

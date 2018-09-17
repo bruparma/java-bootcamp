@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/bruno/java-bootcamp/Topic 0: Introduction to Object Oriented Programming Concepts (OOP)/.metadata/.plugins/org.eclipse.jdt.core
+2191053160.index
+451215611.index
+866715623.index

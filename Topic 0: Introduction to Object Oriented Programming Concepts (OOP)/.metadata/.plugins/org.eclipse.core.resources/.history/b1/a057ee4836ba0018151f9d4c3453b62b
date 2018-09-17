@@ -1,0 +1,19 @@
+
+public class SingletonDB {
+	private static SingletonDB sdb=null;
+	private Connection con = null;
+	
+	//The constructor is private in order to avoid outside instantiation.
+	private SingletonDB(String sURL, String usr, String pwd) {
+		
+		con = DriverManager.getConnection(sURL,usr,pwd);
+		
+	} 
+	
+	public static SingletonDB getInstance() {
+		if(sdb==null) {
+			sdb = new SingletonDB();
+		}
+		return sdb;
+	}	
+}

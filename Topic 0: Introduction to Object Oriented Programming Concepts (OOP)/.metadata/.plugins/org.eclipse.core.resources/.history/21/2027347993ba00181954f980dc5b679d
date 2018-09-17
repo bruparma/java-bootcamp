@@ -1,0 +1,13 @@
+
+public class Proxy {
+	
+	private SingletonDB sdb = null;
+	
+	
+	public void connect() {
+		if (sdb == null) {
+			sdb = SingletonDB.getInstance();
+		}
+		sdb.connect("jdbc:mysql://localhost:3306/database", "user", "password");
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ProxyDemo&apos; to &apos;Proxy&apos;&#x0A;- Original project: &apos;Proxy&apos;&#x0A;- Original element: &apos;ProxyDemo&apos;&#x0A;- Renamed element: &apos;Proxy&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ProxyDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{ProxyDemo.java[ProxyDemo" matchStrategy="1" name="Proxy" qualified="false" references="true" similarDeclarations="false" stamp="1537199582442" textual="false" version="1.0"/>
+</session>

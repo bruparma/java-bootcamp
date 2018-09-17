@@ -1,0 +1,14 @@
+
+public class Proxy {
+	
+	private SingletonDB sdb = null;
+	
+	
+	public void connect(String sURL, String usr, String pwd) {
+		if (sdb == null) {
+			sdb = SingletonDB.getInstance();
+		}
+		sdb.connect();
+		//sdb.connect(, "user", "password");
+	}
+}
