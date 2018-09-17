@@ -10,8 +10,8 @@ public class SingletonDB {
 	private Statement statement = null;
 	private ResultSet resultSet = null;
     private static final String URL="jdbc:mysql://localhost:3306/usersdb";
-    private static final String USR="root";
-    private static final String PWD="ramones17";
+    private static final String USR="user";
+    private static final String PWD="password";
 
 	
 	//The constructor is private in order to avoid outside instantiation.
