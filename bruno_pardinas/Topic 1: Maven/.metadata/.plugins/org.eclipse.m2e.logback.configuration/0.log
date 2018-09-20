@@ -1,0 +1,171 @@
+2018-09-19 20:02:57,641 [Worker-13: Creating project "my-app"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/main/java
+2018-09-19 20:02:57,642 [Worker-13: Creating project "my-app"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /my-app/src/main/resources
+2018-09-19 20:02:57,643 [Worker-13: Creating project "my-app"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/test/java
+2018-09-19 20:02:57,643 [Worker-13: Creating project "my-app"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /my-app/src/test/resources
+2018-09-19 20:02:57,756 [Worker-13: Creating project "my-app"] ERROR o.e.m.jdt.internal.BuildPathManager - Can't save classpath container state for my-app
+java.io.FileNotFoundException: /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/.metadata/.plugins/org.eclipse.m2e.jdt/my-app.container (No existe el fichero o el directorio)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:299) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:238) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:188) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.saveContainerState(BuildPathManager.java:220) [org.eclipse.m2e.jdt_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.updateClasspath(BuildPathManager.java:209) [org.eclipse.m2e.jdt_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.configure(AbstractJavaProjectConfigurator.java:171) [org.eclipse.m2e.jdt_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:508) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:288) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$4.run(ProjectConfigurationManager.java:528) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:26) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:1) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableMavenNature(ProjectConfigurationManager.java:525) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.createSimpleProject(ProjectConfigurationManager.java:709) [org.eclipse.m2e.core_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizard$4.doCreateMavenProjects(MavenProjectWizard.java:223) [org.eclipse.m2e.core.ui_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectJob$1.doCreateMavenProjects(AbstractCreateMavenProjectJob.java:63) [org.eclipse.m2e.core.ui_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:73) [org.eclipse.m2e.core.ui_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectJob.runInWorkspace(AbstractCreateMavenProjectJob.java:67) [org.eclipse.m2e.core.ui_1.9.0.20180606-2036.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.13.0.v20180512-1138.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60) [org.eclipse.core.jobs_3.10.0.v20180427-1454.jar:na]
+2018-09-19 20:02:58,173 [Worker-8: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-19 20:02:58,179 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-19 20:02:58,189 [Worker-8: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-19 20:02:58,190 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-19 20:05:35,893 [Worker-14: Launching Executing test in _home_bruno_java-bootcamp_bruno_pardinas_Topic 1_ Maven_my-app] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app
+2018-09-19 20:05:35,893 [Worker-14: Launching Executing test in _home_bruno_java-bootcamp_bruno_pardinas_Topic 1_ Maven_my-app] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test
+2018-09-19 20:05:40,613 [Worker-7: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-19 20:05:40,620 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-19 20:05:40,622 [Worker-7: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-19 20:05:40,624 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-20 15:22:26,053 [Worker-2: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-09-20 15:23:33,598 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-09-20 15:23:38,426 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.0.0/maven-clean-plugin-3.0.0.jar
+2018-09-20 15:23:38,758 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.0.0/maven-clean-plugin-3.0.0.jar
+2018-09-20 15:23:39,313 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20.1/maven-surefire-plugin-2.20.1.jar
+2018-09-20 15:23:39,513 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20.1/maven-surefire-plugin-2.20.1.jar
+2018-09-20 15:23:39,832 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.0.2/maven-jar-plugin-3.0.2.jar
+2018-09-20 15:23:40,083 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/3.0.2/maven-jar-plugin-3.0.2.jar
+2018-09-20 15:23:40,399 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
+2018-09-20 15:23:40,568 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
+2018-09-20 15:23:40,827 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+2018-09-20 15:23:41,001 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+2018-09-20 15:23:41,271 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.7/maven-site-plugin-3.7.jar
+2018-09-20 15:23:41,637 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.7/maven-site-plugin-3.7.jar
+2018-09-20 15:23:46,572 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 15:23:52,470 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:23:52,471 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 15:23:52,476 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:23:52,476 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 15:23:52,724 [Worker-13: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/main/java
+2018-09-20 15:23:52,733 [Worker-13: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/test/java
+2018-09-20 15:23:54,370 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:23:54,370 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 15:23:54,374 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:23:54,374 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 15:24:03,126 [Worker-13: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 29 sec
+2018-09-20 15:24:03,699 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:24:03,699 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 15:24:03,705 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:24:03,705 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 15:24:55,079 [Worker-0: Launching Executing install in _home_bruno_java-bootcamp_bruno_pardinas_Topic 1_ Maven_my-app] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app
+2018-09-20 15:24:55,122 [Worker-0: Launching Executing install in _home_bruno_java-bootcamp_bruno_pardinas_Topic 1_ Maven_my-app] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2018-09-20 15:25:19,632 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:25:19,633 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 15:25:19,636 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:25:19,636 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 15:25:58,324 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:25:58,325 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 15:25:58,337 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:25:58,338 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 15:26:15,392 [Worker-0: Launching Executing install in _home_bruno_java-bootcamp_bruno_pardinas_Topic 1_ Maven_my-app] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app
+2018-09-20 15:26:15,393 [Worker-0: Launching Executing install in _home_bruno_java-bootcamp_bruno_pardinas_Topic 1_ Maven_my-app] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2018-09-20 15:26:30,580 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:26:30,580 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 15:26:30,583 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 15:26:30,584 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 16:57:06,206 [Worker-2: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-20 16:59:05,976 [Worker-5: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-20 17:01:07,407 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-09-20 17:01:10,678 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:01:13,573 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/main/java
+2018-09-20 17:01:13,593 [Worker-12: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/test/java
+2018-09-20 17:01:14,512 [Worker-3: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar
+2018-09-20 17:01:15,472 [Worker-3: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar
+2018-09-20 17:01:15,985 [Worker-3: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for log4j:log4j:1.2.17
+2018-09-20 17:01:16,821 [Worker-12: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2018-09-20 17:01:16,853 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:01:16,853 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:01:16,858 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:01:16,858 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:01:46,680 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-09-20 17:01:50,316 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:01:51,343 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/main/java
+2018-09-20 17:01:51,344 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/test/java
+2018-09-20 17:01:51,559 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2018-09-20 17:01:51,971 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:01:51,971 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:01:51,975 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:01:51,976 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:02:43,985 [Worker-12: Launching Executing test in _home_bruno_java-bootcamp_bruno_pardinas_Topic 1_ Maven_my-app] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app
+2018-09-20 17:02:43,987 [Worker-12: Launching Executing test in _home_bruno_java-bootcamp_bruno_pardinas_Topic 1_ Maven_my-app] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test
+2018-09-20 17:13:15,865 [Worker-15: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:13:16,237 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:13:16,237 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:13:16,241 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:13:16,242 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:13:42,922 [Worker-15: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:13:43,220 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:13:43,220 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:13:43,236 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:13:43,237 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:15:14,116 [Worker-15: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:15:14,294 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:15:14,294 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:15:14,298 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:15:14,298 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:16:42,932 [Worker-15: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:16:43,121 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:16:43,121 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:16:43,125 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:16:43,125 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:17:19,697 [Worker-20: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:17:19,916 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:17:19,917 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:17:19,931 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:17:19,931 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:17:21,243 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:17:21,243 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:17:21,246 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:17:21,247 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:19:45,645 [Worker-15: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:19:45,950 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:19:45,951 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:19:45,954 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:19:45,955 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:26:53,901 [Worker-24: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:26:54,214 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:26:54,215 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:26:54,218 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:26:54,218 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:30:21,517 [Worker-24: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:30:21,663 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:30:21,663 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:30:21,669 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:30:21,670 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:32:14,036 [Worker-27: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:32:14,267 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:32:14,267 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:32:14,271 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:32:14,271 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources
+2018-09-20 17:42:23,579 [Worker-33: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 0 project(s) in 0 sec
+2018-09-20 17:43:07,727 [Worker-33: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/pom.xml.
+2018-09-20 17:43:07,848 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:43:07,848 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/main/resources
+2018-09-20 17:43:07,851 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-20 17:43:07,851 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app/src/test/resources

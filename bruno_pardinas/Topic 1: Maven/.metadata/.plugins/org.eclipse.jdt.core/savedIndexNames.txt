@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+/home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/.metadata/.plugins/org.eclipse.jdt.core

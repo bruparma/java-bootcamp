@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/bruno/java-bootcamp/bruno_pardinas/Topic 1:: Maven/test-app"/>
+		<item value="/home/bruno/java-bootcamp/bruno_pardinas/Topic 1: Maven/my-app"/>
+		<item value="/home/bruno/java-bootcamp/bruno_pardinas/Topic 1:: Maven/my-app"/>
+	</list>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="26" key="DIALOG_X_ORIGIN"/>
+		<item value="23" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
